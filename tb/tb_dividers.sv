@@ -8,7 +8,7 @@ module tb_dividers;
     wire clk_div3_out;
     wire tick_div4_out;
 
-  clk_divider_by_2N #( .N(3) ) dut_div_by_3 (
+  clk_divider_by_N #( .N(3) ) dut_div_by_3 (
         .clk_in   (clk_in),
         .rst      (rst),
         .clk_out  (clk_div3_out)
